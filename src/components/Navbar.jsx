@@ -30,7 +30,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-semibold text-base"
           >
             <li>
               <Link to="/">Home</Link>
@@ -57,7 +57,7 @@ const Navbar = () => {
               <li>
                 <button
                   onClick={handleLogout}
-                  className="btn bg-red-500 text-white"
+                  className="btn btn-outline"
                 >
                   Logout
                 </button>
@@ -67,8 +67,8 @@ const Navbar = () => {
         </div>
         <a className="text-3xl font-bold ml-8">Prime</a>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+      <div className="navbar-center hidden lg:flex font-semibold">
+        <ul className="menu menu-horizontal px-1 text-base">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -96,13 +96,13 @@ const Navbar = () => {
         {user && (
           <button
             onClick={handleLogout}
-            className="btn bg-red-500 text-white hidden lg:block"
+            className="btn btn-outline hidden lg:block"
           >
             Logout
           </button>
         )}
         <div className="avatar">
-          <div className="w-12 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+          <div className="w-12 rounded-full ring-2 ring-gray-700 ring-offset-base-100 ring-offset-2">
             <img src={user?.photoURL || "/public/avatar.png"} />
           </div>
         </div>
