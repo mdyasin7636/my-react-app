@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
+import logo from '../../public/logo.png'
 
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-10 bg-base-200 text-base-content">
+      <footer className="footer px-40 py-16 bg-base-200 text-base-content">
         <div>
         <Link>
-      {/* <img src="https://i.ibb.co/7j4RsKk/infinity-symbol.png" className='w-24' /> */}
-      <p className='font-bold text-2xl'>Prime</p>
+      <img src={logo} className='w-20' />
+      <p className='font-bold text-3xl'>Prime</p>
       </Link>
         </div>
         <div>
