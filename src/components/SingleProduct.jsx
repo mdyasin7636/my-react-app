@@ -7,7 +7,7 @@ const SingleProduct = ({shoe}) => {
 
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
-      <figure>
+      <figure className="">
         <img
           src= {image_url}
           alt="Shoes"
